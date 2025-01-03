@@ -1,15 +1,31 @@
+/* Mobile First */
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
+:root {
+    --Roboto: 'Roboto', sans-serif;
+    --Spectral: 'Spectral', serif;
+    --QuickSand: 'Quicksand', sans-serif;
+    --Forum: 'Forum', serif;
+}
+
+.container {
+    padding: 10px;
+}
+
 body {
     width: 100%;
     height: 100vh;
     margin: 0 auto;
-    padding: 10px 5px;
+    background-color: rgba(128, 128, 128, 0.2);
 }
+
+/* ~~~~~~~~~~Chapter 1~~~~~~~~~~ */
+/* ~~~~~~~~~~Phase 1~~~~~~~~~~ */
 
 body .hero {
     width: 100%;
@@ -20,54 +36,133 @@ body .hero {
     align-items: center;
 }
 
-.hero .column1 , .column2 {
+.hero .hero_container {
     width: 100%;
-    height: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    height: 100%;
+    padding: 10px;
+}
+
+.hero .column1 {
+    width: 100%;
+    height: 40%;
 }
 
 .column1 .area1 {
     width: 100%;
-    height: 70%;
+    height: 100%;
+    margin: 10px 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px solid red;
-    border-radius: 20px;
+    border: 2px solid indigo;
+    border-radius: 10px;
+    background-color: indigo;
+    opacity: .9;
+    text-align: center;
+    color: white;
 }
 
-.column1 .area2 {
+.p_font {
+    font-family: var(--QuickSand);
+}
+
+.h1 {
+    padding-top: 20px;
+}
+
+/* ~~~~~~~~~~Phase 2~~~~~~~~~~ */
+
+.hero .column2 {
     width: 100%;
-    height: 30%;
+    height: 25%;
+    margin: 10px 0;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 2px solid red;
-    border-radius: 20px;
+    border: 2px solid ivory;
+    border-radius: 10px;
+    background-color: ivory;
 }
 
 .column2 .area1 {
     width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.area1 img {
+    width: 100%;
+    height: 100%;
+}
+
+.column2 .area2 {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.area2 p {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+    font-family: var(--Forum);
+}
+
+/* ~~~~~~~~~~Phase 3~~~~~~~~~~ */
+
+.hero .column3 {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: rgb(255, 181, 53);
+}
+
+.column3 .area1 {
+    width: 100%;
     height: 30%;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px solid red;
-    border-radius: 20px;
 }
 
-.column2 .area2 {
+.area1 p {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+    font-family: var(--Spectral);
+}
+
+.column3 .area2 {
     width: 100%;
     height: 70%;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px solid red;
-    border-radius: 20px;
+    position: relative;
 }
+
+.area2 img {
+    position: absolute;
+    width: 180px;
+    height: 110px;
+    top: 21px;
+    left: 10px;
+}
+
+
 
 
 
