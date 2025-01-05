@@ -44,7 +44,7 @@ body .hero {
 
 .hero .column1 {
     width: 100%;
-    height: 40%;
+    height: 50%;
 }
 
 .column1 .area1 {
@@ -66,15 +66,11 @@ body .hero {
     font-family: var(--QuickSand);
 }
 
-.h1 {
-    padding-top: 20px;
-}
-
 /* ~~~~~~~~~~Phase 2~~~~~~~~~~ */
 
 .hero .column2 {
     width: 100%;
-    height: 25%;
+    height: 20%;
     margin: 10px 0;
     display: flex;
     flex-direction: column;
@@ -119,7 +115,7 @@ body .hero {
 
 .hero .column3 {
     width: 100%;
-    height: 30%;
+    height: 25%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -251,9 +247,200 @@ body .hero {
     height: 35%;
     margin: 10px 0;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: indigo;
+    border-radius: 15px;
+}
+
+.schedule_bar2 .indigo_bar_img {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.indigo_bar_img img {
+    width: 90%;
+    height: 100%;
+    padding: 10px;
+}
+
+.schedule_bar2 .indigo_bar_text {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.indigo_bar_text h1 {
+    font-family: var(--Forum);
+    font-weight: 500;
+    font-size: 21px;
+    color: white;
+    text-align: center;
+}
+
+/* ~~~~~~~~~~Chapter 3~~~~~~~~~~ */
+
+/* ~~~~~~~~~~Phase 1~~~~~~~~~~ */   
+
+.branch {
+    width: 100%;
+    height: 100%;
+}
+
+.branch .branch_container {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.branch .branch_box1 {
+    width: 100%;
+    height: 20%;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: ivory;
+    border-radius: 15px;
+}
+
+.branch_box1 .busy_area {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+
+.busy_area h1 {
+    font-family: var(--Spectral);
+    font-size: 1.5em;
+    padding: 5px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.busy_area p {
+    font-family: var(--QuickSand);
+    font-size: 8px;
+    padding: 5px;
+    font-weight: 500;
+}   
+
+.busy_area img {
+    width: 150px;
+    height: 50px;
+}
+
+.branch_box1 .empty {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ~~~~~~~~~~~Phase 2~~~~~~~~~ */
+
+.branch .branch_box2 {
+    width: 100%;
+    height: 25%;
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    background-color: rgba(240, 230, 140, 0.812);
+}
+
+.branch_box2 .box2_text {
+    width: 100%;
+    height: 40%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box2_text h1 {
+    padding: 10px;
+    font-family: var(--Roboto);
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 0;
+    text-align: start;
+}
+
+.branch_box2 .box2_img {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.box2_img img {
+    width: 200px;
+    height: 100px;
+    padding: 10px;
+}
+
+/* ~~~~~~~~~~~Phase 3~~~~~~~~~~ */
+
+.branch .branch_box3 {
+    width: 100%;
+    height: 50%;
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    background-color: rgba(255, 166, 0, 0.625);
+}
+
+.branch_box3 .box3_text {
+    width: 100%;
+    height: 30%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box3_text h1 {
+    padding: 10px;
+    font-family: var(--QuickSand);
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 0;
+    text-align: start;
+}
+
+.branch_box3 .box3_img {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.box3_img img {
+    width: 250px;
+    height: 250px;
+    padding: 10px;
 }
 
 @media screen and (min-width: 500px) {
